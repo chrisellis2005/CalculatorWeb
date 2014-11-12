@@ -6,19 +6,19 @@ describe('my app', function() {
 
   browser.get('index.html');
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-    expect(browser.getLocationAbsUrl()).toMatch("/view1");
+  it('should automatically redirect to /Calculator when location hash/fragment is empty', function() {
+    expect(browser.getLocationAbsUrl()).toMatch("/Calculator");
   });
 
 
   describe('view1', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view1');
+      browser.get('index.html#/Calculator');
     });
 
 
-    it('should render view1 when user navigates to /view1', function() {
+    it('should render Calculator when user navigates to /Calculator', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 1/);
     });
