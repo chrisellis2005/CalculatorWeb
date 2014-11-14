@@ -1,0 +1,47 @@
+<div class="panel panel-primary" >
+    <shortcut></shortcut>
+    <div class="panel-heading">
+        <span ng-repeat="item in calculationItems  track by $index">{{item}} </span>
+    </div>
+
+    <div class="panel-body">
+        <div>
+
+            <div class="row">
+                <button class="btn btn-default col-md-1" ng-click="addItem('1')" ng-disabled="!numberMode" >1</button>
+                <button class="btn btn-default col-md-1" ng-click="addItem('2')" ng-disabled="!numberMode">2</button>
+                <button class="btn btn-default col-md-1" ng-click="addItem('3')" ng-disabled="!numberMode">3</button>
+                <button class="btn btn-default col-md-1" ng-click="addItem('+')" ng-disabled="numberMode">+</button>
+            </div>
+
+            <div class="row">
+                <button class="btn btn-default col-md-1" ng-click="addItem('4')" ng-disabled="!numberMode">4</button>
+                <button class="btn btn-default col-md-1" ng-click="addItem('5')" ng-disabled="!numberMode">5</button>
+                <button class="btn btn-default col-md-1" ng-click="addItem('6')" ng-disabled="!numberMode">6</button>
+                <button class="btn btn-default col-md-1" ng-click="addItem('-')" ng-disabled="numberMode">-</button>
+            </div>
+
+            <div class="row">
+                <button class="btn btn-default col-md-1" ng-click="addItem('7')" ng-disabled="!numberMode">7</button>
+                <button class="btn btn-default col-md-1" ng-click="addItem('8')" ng-disabled="!numberMode">8</button>
+                <button class="btn btn-default col-md-1" ng-click="addItem('9')" ng-disabled="!numberMode">9</button>
+                <button class="btn btn-danger col-md-1" ng-click="reset()" >Reset</button>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <button class="btn btn-default col-md-1" ng-click="addItem('0')" ng-disabled="!numberMode">0</button>
+                <button class="btn btn-success col-md-2" ng-click="calculateResult()" ng-disabled="numberMode">=</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-footer">
+        <div>
+            Result: <span>{{result}}</span>
+        </div>
+
+    </div>
+
+
+</div>
