@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">    
+    <id>Calculator.Web</id>
+    <version>0.0.0</version>
+    <authors>Chris Ellis</authors>
+    <owners>Chris Ellis</owners>
+    <summary>Simple Calculator in AngularJS</summary>
+    <licenseUrl>https://github.com/chrisellis2005/CalculatorWeb</licenseUrl>
+    <projectUrl>https://github.com/chrisellis2005/CalculatorWeb</projectUrl>
+    <iconUrl>https://github.com/chrisellis2005/CalculatorWeb</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Calculator</description>
+    <releaseNotes></releaseNotes>
+    <copyright></copyright>    
+    <tags>Calculator</tags>
+  </metadata>
+  <files>
+    <file src="..\build\web\**\*" target="" />
+  </files>
+</package>
