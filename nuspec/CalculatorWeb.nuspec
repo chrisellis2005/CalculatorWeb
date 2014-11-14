@@ -16,8 +16,8 @@
     <tags>Calculator</tags>
   </metadata>
   <files>
-    <file src="package.json" target="" />
-    <file src="bower.json" target="" />
+    <file src="..\package.json" target="" />
+    <file src="..\bower.json" target="" />
     <file src="..\build\web\**\*" target="app" />
   </files>
 </package>
